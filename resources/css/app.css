@@ -1,0 +1,44 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.bg-filter {
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.modal-bg {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.hidden-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.hidden-scroll {
+    -ms-overflow-style: none;
+}
+.white{
+    background-color: #FFFFFF;
+}
+.gray{
+    background-color: #FAFAFA;
+}
+
+.loader {
+    border-top-color: #6231ba;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
